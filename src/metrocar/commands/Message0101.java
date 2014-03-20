@@ -17,7 +17,6 @@ public class Message0101 extends PidMessage {
 	protected String calculateValue(String value) {
 		String[] arr = value.split(" ");
 		int A = (Integer.parseInt(arr[2], 16))-40;
-		DatatypeConverter;
 		if (doLog)
 			Log.d(TAG, getDescription()+" calculateValue("+arr[2]+") result = "+A);
 		return Integer.toString(A);
